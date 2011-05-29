@@ -17,7 +17,7 @@ public class Basic extends JavaPlugin {
 		PluginManager pm = getServer().getPluginManager();
 		//Create PlayerCommand listener
 	    pm.registerEvent(Event.Type.PLAYER_COMMAND_PREPROCESS, playerListener, Event.Priority.Normal, this);
-       //Get the infomation from the yml file.
+	    //Get the infomation from the yml file.
         PluginDescriptionFile pdfFile = this.getDescription();
         //Print that the plugin has been enabled!
         System.out.println(pdfFile.getName() + " version " + pdfFile.getVersion() + " is enabled!");
